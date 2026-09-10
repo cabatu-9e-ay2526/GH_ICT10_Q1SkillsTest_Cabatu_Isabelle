@@ -12,34 +12,50 @@
 <body>
     <h1>Sweet Treats Dessert Ordering</h1>
 
-    <h3>Menu:</h3>
+    <h3>Customer Information</h3>
+
+    <label for="customer_name">Name:</label>
+    <input type="text" id="customer_name">
+    <br><br>
+
+    <label for="customer_contact">Contact Number:</label>
+    <input type="text" id="customer_contact">
+    <br><br>
+
+    <h3>Menu</h3>
 
     <input type="checkbox" id="cake" value="85">
-    Chocolate Cake - ₱85.00<br>
+    Chocolate Cake - ₱85.00
+    <br>
 
     <input type="checkbox" id="donut" value="45">
-    Glazed Donut - ₱45.00<br>
+    Glazed Donut - ₱45.00
+    <br>
 
     <input type="checkbox" id="cupcake" value="55">
-    Strawberry Cupcake - ₱55.00<br>
+    Strawberry Cupcake - ₱55.00
+    <br>
 
     <input type="checkbox" id="icecream" value="65">
-    Ice Cream - ₱65.00<br>
+    Ice Cream - ₱65.00
+    <br>
 
     <input type="checkbox" id="brownie" value="70">
-    Fudge Brownie - ₱70.00<br><br>
+    Fudge Brownie - ₱70.00
+    <br><br>
 
     <button py-click="make_receipt">
         Create Receipt
     </button>
 
-    <h3>Receipt:</h3>
+    <h3>Receipt</h3>
 
-    <div id="receipt_subtotal"></div><br>
-    <div id="receipt_vat"></div><br>
-    <div id="receipt_total"></div><br>
+    <div id="receipt_customer"></div>
+    <div id="receipt_items"></div>
+    <div id="receipt_subtotal"></div>
+    <div id="receipt_vat"></div>
+    <div id="receipt_total"></div>
 
     <py-script src="main.py"></py-script>
-    
 </body>
 </html>
